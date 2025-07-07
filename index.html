@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Ana Beatriz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-courier {
+            font-family: 'Courier Prime', 'Courier New', monospace;
+        }
+
+        .font-jetbrains {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .animate-typing {
+            overflow: hidden;
+            border-right: 3px solid #D8B4FE;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: digitando 3s steps(30, end), piscando 1s infinite step-end;
+        }
+
+        @keyframes digitando {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes piscando {
+
+            0%,
+            50% {
+                border-color: #D8B4FE;
+            }
+
+            51%,
+            100% {
+                border-color: transparent;
+            }
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #FAF5FF 0%, #F3E8FF 50%, #E9D5FF 100%);
+        }
+
+        .card-shadow {
+            box-shadow:
+                0 8px 20px rgba(216, 180, 254, 0.25),
+                inset 0 0 0 2px rgba(255, 255, 255, 0.4);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow:
+                0 12px 25px rgba(196, 181, 253, 0.3),
+                0 4px 10px rgba(216, 180, 254, 0.2);
+        }
+
+        .emoji-border::before {
+            content: '⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆';
+            color: #A855F7;
+            font-size: 1.2rem;
+            opacity: 0.8;
+            display: block;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body class="font-courier text-gray-700 gradient-bg min-h-screen">
+
+    <header
+        class="text-center py-12 px-8 bg-gradient-to-br from-white to-purple-50 rounded-3xl mx-4 mt-8 mb-8 card-shadow hover-lift transition-all duration-300 emoji-border">
+        <h1 class="font-jetbrains text-4xl font-bold text-purple-600 mb-4 animate-typing w-fit mx-auto">
+            Sobre Mim ✨
+        </h1>
+        <h2 class="font-courier text-lg text-violet-600 italic opacity-90">
+            Ana Beatriz Coelho de Araujo
+        </h2>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 pb-8">
+
+        <section
+            class="bg-gradient-to-br from-white to-purple-50 rounded-3xl p-8 mb-8 card-shadow hover-lift transition-all duration-300">
+            <h2
+                class="font-jetbrains text-2xl font-semibold text-purple-600 mb-6 uppercase tracking-wide border-b-3 border-purple-300 pb-2">
+                ⭐ Quem Sou Eu
+            </h2>
+            <p class="text-base leading-relaxed mb-4 text-justify">
+                Meu nome é Ana Beatriz Colego de Araujo, tenho 24 anos e nasci em Fortaleza, no Ceará. Venho de uma
+                família grande, com seis irmãos, mas não tenho muito contato com eles, apenas com meu irmão que viveu
+                comigo, Diego.
+            </p>
+            <p class="text-base leading-relaxed mb-4 text-justify">
+                Minha mãe é vendedora e mora em Fortaleza. Já meu pai é empresário e vive no Piauí. Apesar da distância,
+                mantenho contato com ambos e sinto muita falta da minha mãe.
+            </p>
+            <p class="text-base leading-relaxed mb-4 text-justify">
+                Aos 17 anos, me mudei para a Bahia, onde iniciei o curso de Medicina Veterinária na UFRB (Universidade
+                Federal do Recôncavo da Bahia). No entanto, percebi que aquele não era o caminho ideal para mim. Depois
+                disso, morei no Rio de Janeiro, retornei a Fortaleza e hoje vivo em Toledo, no Paraná.
+            </p>
+            <p class="text-base leading-relaxed mb-4 text-justify">
+                Vivo atualmente com meu noivo, Lucas, que é desenvolvedor mobile na empresa Maxicon. Ele nasceu em Foz
+                do Iguaçu e nos conhecemos quando tínhamos 19 anos, jogando Minecraft. Começamos como amigos e, após
+                quatro anos de amizade, acabamos nos apaixonando. Hoje, seguimos lado a lado, compartilhando sonhos,
+                aprendizados e a rotina da vida adulta.
+            </p>
+            <p class="text-base leading-relaxed text-justify">
+                Todas essas mudanças e experiências me ajudaram a crescer pessoalmente ❤️
+            </p>
+        </section>
+
+
+        <figure class="mb-8">
+            <img src="https://www.topensandoemviajar.com/wp-content/uploads/2023/08/melhores-dicas-fazer-fortaleza-ceara.jpg"
+                alt="Vista de Fortaleza, Ceará"
+                class="w-full max-w-2xl mx-auto rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <figcaption class="text-center mt-4 text-violet-600 italic font-medium">
+                Minha cidade natal: Fortaleza, CE 🏖️
+            </figcaption>
+        </figure>
+
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <section
+                class="bg-gradient-to-br from-white to-purple-50 rounded-3xl p-8 card-shadow hover-lift transition-all duration-300">
+                <h2
+                    class="font-jetbrains text-2xl font-semibold text-purple-600 mb-6 uppercase tracking-wide border-b-3 border-purple-300 pb-2">
+                    🎮 O Que Gosto de Fazer
+                </h2>
+                <p class="text-base leading-relaxed text-justify">
+                    Nas horas vagas, gosto de escutar música, ler, estudar e principalmente jogar. Sou apaixonada por
+                    jogos como League of Legends, Valorant e Minecraft, e atualmente meu jogo favorito é Baldur's Gate,
+                    que tem me proporcionado muitas horas de imersão e diversão.
+                </p>
+            </section>
+
+
+            <section
+                class="bg-gradient-to-br from-white to-purple-50 rounded-3xl p-8 card-shadow hover-lift transition-all duration-300">
+                <h2
+                    class="font-jetbrains text-2xl font-semibold text-purple-600 mb-6 uppercase tracking-wide border-b-3 border-purple-300 pb-2">
+                    📺 Séries que Gosto
+                </h2>
+                <p class="text-base leading-relaxed mb-4 text-justify">
+                    Adoro assistir séries, principalmente quando quero relaxar e me entreter com boas histórias. Minha
+                    série favorita é <strong class="text-purple-600">Fallout</strong>, por seu universo pós-apocalíptico
+                    rico e bem construído. Além dela, também sou fã de:
+                </p>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">💫</span>
+                        <span><strong class="text-purple-600">Stranger Things</strong>: Foi uma das primeiras séries que
+                            assisti e me apaixonei</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">🐉</span>
+                        <span><strong class="text-purple-600">Game of Thrones</strong>: Apesar do final polêmico, admiro
+                            muito o desenvolvimento dos personagens</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">🔥</span>
+                        <span><strong class="text-purple-600">House of the Dragon</strong></span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">👻</span>
+                        <span><strong class="text-purple-600">Supernatural</strong>: Acompanhei por anos, os irmãos
+                            Winchester têm lugar especial no meu coração</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Animes -->
+            <section
+                class="bg-gradient-to-br from-white to-purple-50 rounded-3xl p-8 card-shadow hover-lift transition-all duration-300">
+                <h2
+                    class="font-jetbrains text-2xl font-semibold text-purple-600 mb-6 uppercase tracking-wide border-b-3 border-purple-300 pb-2">
+                    🌸 Animes que Gosto
+                </h2>
+                <p class="text-base leading-relaxed mb-4 text-justify">
+                    Também gosto muito de animes. Meu anime favorito é <strong class="text-purple-600">Frieren</strong>,
+                    por sua sensibilidade e forma única de explorar temas como a passagem do tempo e a memória. Também
+                    acompanho e admiro:
+                </p>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">⚔️</span>
+                        <span><strong class="text-purple-600">Demon Slayer</strong>: Pelas cenas de ação incríveis e
+                            trilha sonora emocionante</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">💝</span>
+                        <span><strong class="text-purple-600">Kamisama Hajimemashita</strong>: Meu romance
+                            favorito</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">🏴‍☠️</span>
+                        <span><strong class="text-purple-600">One Piece</strong>: Comecei recentemente, me divertindo
+                            com
+                            a aventura dos personagens</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Música -->
+            <section
+                class="bg-gradient-to-br from-white to-purple-50 rounded-3xl p-8 card-shadow hover-lift transition-all duration-300">
+                <h2
+                    class="font-jetbrains text-2xl font-semibold text-purple-600 mb-6 uppercase tracking-wide border-b-3 border-purple-300 pb-2">
+                    🎵 Estilo Musical
+                </h2>
+                <p class="text-base leading-relaxed mb-6 text-justify">
+                    Eu gosto de todos os gêneros musicais, mas meu preferido é o Nu Metal, pela intensidade e
+                    profundidade emocional das letras e melodias. A música é uma das minhas maiores companhias no dia a
+                    dia.
+                </p>
+
+                <h3 class="font-jetbrains text-lg font-semibold text-violet-600 mb-4">
+                    🎤 Artistas Favoritos
+                </h3>
+                <div class="grid grid-cols-2 gap-2 text-sm mb-6">
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">System of a Down</span>
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Kendrick Lamar</span>
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">The Smiths</span>
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Djonga</span>
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Depeche Mode</span>
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Rammstein</span>
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Bruno Mars</span>
+                </div>
+
+                <h3 class="font-jetbrains text-lg font-semibold text-violet-600 mb-4">
+                    🎶 Músicas Favoritas
+                </h3>
+                <ul class="space-y-1 text-sm">
+                    <li class="flex items-center">
+                        <span class="text-purple-500 mr-2">♪</span>
+                        <span>System of a Down – "Toxicity"</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-purple-500 mr-2">♪</span>
+                        <span>Kendrick Lamar – "Alright"</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-purple-500 mr-2">♪</span>
+                        <span>The Smiths – "There Is a Light That Never Goes Out"</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-purple-500 mr-2">♪</span>
+                        <span>Djonga – "Leal"</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-purple-500 mr-2">♪</span>
+                        <span>Depeche Mode – "Enjoy the Silence"</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-purple-500 mr-2">♪</span>
+                        <span>Rammstein – "Sonne"</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-purple-500 mr-2">♪</span>
+                        <span>Bruno Mars – "Versace on the Floor"</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+
+        <section
+            class="bg-gradient-to-br from-white to-purple-50 rounded-3xl p-8 mb-8 card-shadow hover-lift transition-all duration-300">
+            <h2
+                class="font-jetbrains text-2xl font-semibold text-purple-600 mb-6 uppercase tracking-wide border-b-3 border-purple-300 pb-2">
+                🎀 Tecnologias que uso e gosto:
+            </h2>
+
+            <div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <span
+                        class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-center font-medium">Java</span>
+                    <span
+                        class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-center font-medium">Spring</span>
+                    <span
+                        class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-center font-medium">MySQL</span>
+                    <span
+                        class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-center font-medium">Python</span>
+                    <span
+                        class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-center font-medium">TypeScript</span>
+                    <span
+                        class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-center font-medium">Figma</span>
+                    <span
+                        class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-center font-medium">Angular</span>
+                    <span
+                        class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-center font-medium">Tailwind</span>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer
+        class="text-center py-8 px-8 bg-gradient-to-br from-white to-purple-50 rounded-3xl mx-4 mb-8 card-shadow hover-lift transition-all duration-300">
+        <p class="font-jetbrains text-lg text-purple-600 font-medium">
+            Obrigada pela atenção! ✨💖
+        </p>
+        <p class="text-sm text-violet-600 mt-2 italic">
+            Feito com 💝 e muito Tailwind CSS
+        </p>
+    </footer>
+</body>
+
+</html>
