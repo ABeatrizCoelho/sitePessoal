@@ -123,15 +123,32 @@
             </p>
         </section>
 
-
         <figure class="mb-8">
-            <img src="https://www.topensandoemviajar.com/wp-content/uploads/2023/08/melhores-dicas-fazer-fortaleza-ceara.jpg"
-                alt="Vista de Fortaleza, Ceará"
-                class="w-full max-w-2xl mx-auto rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="relative w-full max-w-2xl mx-auto overflow-hidden rounded-3xl shadow-lg">
+                <div id="carousel" class="flex transition-transform duration-500">
+                    <img src="https://www.topensandoemviajar.com/wp-content/uploads/2023/08/melhores-dicas-fazer-fortaleza-ceara.jpg"
+                        alt="Fortaleza" class="w-full flex-shrink-0 object-cover">
+                    <img src="/assets/salvadorBahia.jpg" alt="Eu em Salvador - Bahia (morei lá)"
+                        class="w-full flex-shrink-0 object-cover">
+                    <img src="/assets/euilucas.jpg" alt="Eu e Lucas" class="w-full flex-shrink-0 object-cover">
+                </div>
+
+
+                <button onclick="moverImagens(-1)"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-purple-200 text-purple-700 px-3 py-2 rounded-r-xl hover:bg-purple-300">
+                    ⬅
+                </button>
+                <button onclick="moverImagens(1)"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-purple-200 text-purple-700 px-3 py-2 rounded-l-xl hover:bg-purple-300">
+                    ➡
+                </button>
+            </div>
+
             <figcaption class="text-center mt-4 text-violet-600 italic font-medium">
-                Minha cidade natal: Fortaleza, CE 🏖️
+                Minha cidade natal e momentos especiais 💜
             </figcaption>
         </figure>
+
 
 
         <div class="grid md:grid-cols-2 gap-8">
@@ -184,7 +201,7 @@
                 </ul>
             </section>
 
-            <!-- Animes -->
+
             <section
                 class="bg-gradient-to-br from-white to-purple-50 rounded-3xl p-8 card-shadow hover-lift transition-all duration-300">
                 <h2
@@ -216,7 +233,7 @@
                 </ul>
             </section>
 
-            <!-- Música -->
+
             <section
                 class="bg-gradient-to-br from-white to-purple-50 rounded-3xl p-8 card-shadow hover-lift transition-all duration-300">
                 <h2
@@ -320,6 +337,23 @@
             Feito com 💝 e muito Tailwind CSS
         </p>
     </footer>
+
+    <script>
+        let currentIndex = 0;
+
+        function moverImagens(d) {
+            const carousel = document.getElementById('carousel');
+            const slides = carousel.children.length;
+            currentIndex += d;
+
+            if (currentIndex < 0) currentIndex = slides - 1;
+            if (currentIndex >= slides) currentIndex = 0;
+
+            const offset = -currentIndex * 100;
+            carousel.style.transform = `translateX(${offset}%)`;
+        }
+    </script>
+
 </body>
 
 </html>
